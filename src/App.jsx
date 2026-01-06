@@ -29,9 +29,9 @@ function App() {
         </div>
         <h5 className="mt-3">更多圖片：</h5>
         <div className="d-flex flex-wrap">
-          {getOne.imagesUrl.map((img, idx) => (<>
+          {getOne.imagesUrl.map((img, idx) => (<Fragment key={idx}>
             <img src={img} className="secondary-image" alt={idx} />
-          </>))}
+          </Fragment>))}
         </div>
       </div>
     </div>
